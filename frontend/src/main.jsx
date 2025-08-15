@@ -15,8 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         audience: auth0Config.audience,
         scope: auth0Config.scope
       }}
-      onRedirectCallback={(appState, user) => {
-        console.log('Redirect callback:', { appState, user });
+      onRedirectCallback={() => {
         window.history.replaceState({}, document.title, window.location.pathname);
       }}
     >

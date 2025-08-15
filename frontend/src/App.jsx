@@ -8,7 +8,6 @@ function App() {
   const { isLoading, error } = useAuth0();
 
   if (error) {
-    console.error('Auth0 Error:', error);
     return (
       <div className="app">
         <div className="container">
@@ -16,10 +15,6 @@ function App() {
           <div className="error">
             <h2>Authentication Error</h2>
             <p>{error.message}</p>
-            <details>
-              <summary>Error Details</summary>
-              <pre>{JSON.stringify(error, null, 2)}</pre>
-            </details>
           </div>
         </div>
       </div>

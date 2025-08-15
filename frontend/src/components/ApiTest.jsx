@@ -31,7 +31,6 @@ const ApiTest = () => {
           scope: 'openid profile email'
         }
       });
-      console.log('Access token obtained:', token.substring(0, 20) + '...');
       const response = await fetch('/api/protected', {
         headers: {
           Authorization: `Bearer ${token}`

@@ -7,11 +7,3 @@ export const auth0Config = {
   audience: import.meta.env.VITE_AUTH0_AUDIENCE || undefined,
   scope: "openid profile email"
 };
-
-// Debug logging
-console.log('Auth0 Config:', {
-  domain: auth0Config.domain,
-  clientId: auth0Config.clientId,
-  redirectUri: auth0Config.redirectUri,
-  audience: auth0Config.audience
-});

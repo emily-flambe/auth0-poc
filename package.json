@@ -13,8 +13,5 @@
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
-  },
-  "dependencies": {
-    "puppeteer": "^24.16.2"
   }
 }
