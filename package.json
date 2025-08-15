@@ -1,0 +1,20 @@
+{
+  "name": "auth0-poc",
+  "version": "1.0.0",
+  "description": "Auth0 POC with React frontend and Cloudflare Worker backend",
+  "scripts": {
+    "install:all": "cd frontend && npm install && cd ../worker && npm install",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:worker": "cd worker && npm run dev",
+    "kill:ports": "lsof -ti:3000,8787 | xargs kill -9 2>/dev/null || true",
+    "dev": "npm run kill:ports && concurrently \"npm run dev:worker\" \"npm run dev:frontend\"",
+    "build": "cd frontend && npm run build",
+    "deploy": "npm run build && cd worker && npm run deploy"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  },
+  "dependencies": {
+    "puppeteer": "^24.16.2"
+  }
+}

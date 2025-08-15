@@ -1,0 +1,21 @@
+name = "auth0-poc"
+main = "src/index.js"
+compatibility_date = "2025-08-13"
+
+[observability]
+enabled = true
+
+[site]
+bucket = "../frontend/dist"
+
+# Environment variables (non-sensitive)
+# [vars]
+# Add any non-sensitive variables here
+
+# For local development, create a .dev.vars file with:
+# AUTH0_DOMAIN=your-tenant.auth0.com
+# AUTH0_AUDIENCE=https://your-api-identifier
+
+# For production, use wrangler secret:
+# wrangler secret put AUTH0_DOMAIN
+# wrangler secret put AUTH0_AUDIENCE

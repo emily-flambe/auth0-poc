@@ -1,0 +1,17 @@
+{
+	"name": "auth0-poc",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"start": "wrangler dev"
+	},
+	"devDependencies": {
+		"wrangler": "^4.30.0"
+	},
+	"dependencies": {
+		"@cloudflare/kv-asset-handler": "^0.4.0",
+		"jose": "^6.0.12"
+	}
+}

@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment files
+.env
+.env.local
+.dev.vars
+frontend/.env
+worker/.dev.vars
+
+# Build outputs
+dist/
+*/dist/
+.wrangler/
+*/.wrangler/
+
+# Frontend
+frontend/dist/
+
+# Worker
+worker/.wrangler/
+
+# OS files
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
